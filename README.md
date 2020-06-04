@@ -79,3 +79,15 @@ pip install -r requirements.txt
 ```bash
 python manage.py runserver
 ```
+
+#### Docker
+Build container:
+```bash
+docker build . -t bookomatic
+```
+
+Run container:
+```bash
+docker run -d --name bookomatic -p 80:8000 bookomatic
+```
+Type `localhost` to view server
